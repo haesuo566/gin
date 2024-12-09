@@ -16,8 +16,10 @@ linters:
     - nakedret
     - nilerr
     - nolintlint
+    - perfsprint
     - revive
     - testifylint
+    - usestdlibvars
     - wastedassign
 
 linters-settings:
@@ -34,6 +36,13 @@ linters-settings:
       - G112
       - G201
       - G203
+  perfsprint:
+    err-error: true
+    errorf: true
+    fiximports: true
+    int-conversion: true
+    sprintf1: true
+    strconcat: true
   testifylint:
     enable-all: true
 
